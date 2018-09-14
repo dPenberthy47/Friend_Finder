@@ -1,13 +1,11 @@
-// 1.)
-// A GET Route to `/survey` which should display
-//the survey page.
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "home.html"));
-});
+let path = require("path");
 
-// 2.)
-//A default, catch-all route that leads to
-//`home.html` which displays the home page.
-app.get("/survey", (req, res) => {
-  res.sendFile(path.join(__dirname, "survey.html"));
-});
+module.exports = app => {
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "public", "home.html"));
+  });
+
+  app.get("/survey", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "public", "survey.html"));
+  });
+};
