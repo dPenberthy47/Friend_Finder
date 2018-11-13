@@ -1,16 +1,29 @@
 {
-  "name": "package.json",
+  "name": "friendfinderddo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Human Compatibility App for Finding Friends",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "keywords": [],
   "author": "David Penberthy",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "path": "^0.12.7"
+    "fs": "0.0.1-security",
+    "mysql": "^2.16.0",
+    "node": "^10.10.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": ">=10.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git"
   }
 }
